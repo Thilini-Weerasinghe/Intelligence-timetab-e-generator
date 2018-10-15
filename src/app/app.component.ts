@@ -1,5 +1,5 @@
 import { Component  } from '@angular/core';
-//import {ImageService} from '../image/shared/image.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,9 +7,5 @@ import { Component  } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample';
-  //visibleImages : any[];
 
-/*  constructor(private imageService : ImageService){
-    this.visibleImages = this.imageService.getImages();
-  }*/
 }

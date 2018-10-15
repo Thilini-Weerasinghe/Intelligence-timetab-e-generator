@@ -11,8 +11,7 @@
 .text1{
   padding-top: 150px;
   color : black;
-  /* align-content: center ; */
-  font-size: 55px ;
+  font-size: 60 px ;
   text-align: center ;
   font-family: serif;
 
@@ -20,12 +19,11 @@
 
 .btn1{
 text-align: center ;
- /* padding-right: 10px; */
 }
 
 #b1{
-  /* padding-right: 100px;
-  padding-left: 100px;  */
+
+  margin-top: 30px;
   margin-left: 30px;
   background-color: grey;
   color : white ;
@@ -33,9 +31,9 @@ text-align: center ;
 }
 
 #b2{
-  /* padding-right: 100px;
-  padding-left: 100px;  */
+
   margin-left: 30px;
   background-color: grey;
   color : white ;
+  margin-top: 50 px;
 }
