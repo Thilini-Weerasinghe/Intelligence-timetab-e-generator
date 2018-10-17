@@ -1,6 +1,6 @@
 .front{
 
-  background-image:url(src/assets/img/img2.jpg);
+   background-image:url(src/assets/img/img2.jpg);
   background-size : cover;
   background-position: center;
   width :100% ;
@@ -11,7 +11,7 @@
 .text1{
   padding-top: 150px;
   color : black;
-  font-size: 60 px ;
+  font-size: 60px ;
   text-align: center ;
   font-family: serif;
 
@@ -35,5 +35,5 @@ text-align: center ;
   margin-left: 30px;
   background-color: grey;
   color : white ;
-  margin-top: 50 px;
+  margin-top: 50px;
 }

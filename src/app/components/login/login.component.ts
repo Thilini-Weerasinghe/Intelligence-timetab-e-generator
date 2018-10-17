@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+//import {HomeComponent} from '../home/home.component';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -13,3 +13,10 @@ export class LoginComponent implements OnInit {
   }
 
 }
+// export class LoginComponent {
+//   @input() home: HomeComponent;
+//   @HostListener('click')
+//   click(){
+//     this.home.toggle();
+//   }
+// }
