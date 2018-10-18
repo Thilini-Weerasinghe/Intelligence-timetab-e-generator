@@ -7,6 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { ViewComponent } from './components/view/view.component';
 import { SubjectformComponent } from './components/subjectform/subjectform.component';
+import { LecturerformComponent } from './components/lecturerform/lecturerform.component';
 
 
 const appRoutes: Routes=[
@@ -21,6 +22,7 @@ const appRoutes: Routes=[
     HomeComponent,
     ViewComponent,
     SubjectformComponent,
+    LecturerformComponent,
   ],
   imports: [
     BrowserModule,
