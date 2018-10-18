@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ViewComponent } from './components/view/view.component';
 import { SubjectformComponent } from './components/subjectform/subjectform.component';
 import { LecturerformComponent } from './components/lecturerform/lecturerform.component';
+import { LecturehallformComponent } from './components/lecturehallform/lecturehallform.component';
 
 
 const appRoutes: Routes=[
@@ -23,6 +24,7 @@ const appRoutes: Routes=[
     ViewComponent,
     SubjectformComponent,
     LecturerformComponent,
+    LecturehallformComponent,
   ],
   imports: [
     BrowserModule,
