@@ -1,4 +1,6 @@
-<form>
+<div class="container">
+  <h2> SUBJECT FORM</h2>
+  <form>
   <div class="form-group">
     <label for="formGroupExampleInput">Subject Name </label>
     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Subject Name ">
@@ -8,9 +10,13 @@
     <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Subject Id">
   </div>
   <div>
-    <label for="formGroupExampleInput">Year</label>
+  <label for="formGroupExampleInput">Year</label>
   <select class="form-control">
-  <option>select year</option>
+  <option> Select year</option>
+  <option> 1st  year</option>
+  <option> 2nd year</option>
+  <option> 3rd year</option>
+  <option> 4th year</option>
 </select>
 </div>
   <div class="form-group">
@@ -21,3 +27,5 @@
 <div class="submit2">
 <button type="button" class="btn btn-primary btn-lg"> <b> SUBMIT </b> </button>
 </div>
+</div>
+<router-outlet> </router-outlet>

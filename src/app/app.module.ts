@@ -9,6 +9,7 @@ import { ViewComponent } from './components/view/view.component';
 import { SubjectformComponent } from './components/subjectform/subjectform.component';
 import { LecturerformComponent } from './components/lecturerform/lecturerform.component';
 import { LecturehallformComponent } from './components/lecturehallform/lecturehallform.component';
+import { SelectionComponent } from './components/selection/selection.component';
 
 
 const appRoutes: Routes=[
@@ -25,10 +26,41 @@ const appRoutes: Routes=[
     SubjectformComponent,
     LecturerformComponent,
     LecturehallformComponent,
+    SelectionComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot([
+      {
+        path : 'login',
+        component : LoginComponent
+      },
+      {
+        path : 'view',
+        component : ViewComponent
+      },
+      {
+        path : 'login/select',
+        component : SelectionComponent
+      },
+
+      {
+        path : 'login/select/subject',
+        component : SubjectformComponent
+      },
+      {
+        path : 'login/select/lecturer',
+        component : LecturerformComponent
+      },
+      {
+        path : 'login/select/lecture hall',
+        component : LecturehallformComponent
+      },
+      {
+        path : '',
+        component : HomeComponent
+      }
+    ]),
 
   ],
 
