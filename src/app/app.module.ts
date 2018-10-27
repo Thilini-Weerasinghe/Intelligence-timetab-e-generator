@@ -6,12 +6,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { ViewComponent } from './components/view/view.component';
+import { LecturerService} from './shared_service/lecturer.service';
 import { SubjectformComponent } from './components/subjectform/subjectform.component';
 import { LecturerformComponent } from './components/lecturerform/lecturerform.component';
 import { LecturehallformComponent } from './components/lecturehallform/lecturehallform.component';
 import { SelectionComponent } from './components/selection/selection.component';
-
-
+import {HttpClientModule} from '../../node_modules/@angular/common/http';
+import {FormsModule} from '@angular/forms';
 const appRoutes: Routes=[
 {path: 'login', component : LoginComponent}
 ];
@@ -30,6 +31,11 @@ const appRoutes: Routes=[
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
+
+
+
     RouterModule.forRoot([
       {
         path : 'login',
@@ -63,6 +69,7 @@ const appRoutes: Routes=[
     ]),
 
   ],
+    providers: [LecturerService],
 
   bootstrap: [AppComponent]
 })

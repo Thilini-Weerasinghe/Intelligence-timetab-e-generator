@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {LecturerService} from '../../shared_service/lecturer.service';
+import {Lecturer} from '../../lecturer';
 
 @Component({
   selector: 'app-lecturerform',
@@ -6,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lecturerform.component.css']
 })
 export class LecturerformComponent implements OnInit {
+  private lecturerList;
 
-  constructor() { }
+
+  constructor(private lecturerService: LecturerService) { }
 
   ngOnInit() {
+
+    this.getLecturerList();
+  }
+  getLecturerList() {
+    this.lecturerService.getLecturer().subscribe(data => {
+      console.log(data);
+      this.lecturerList = data;
+    }, err => {
+      console.log(err);
+    });
   }
 
 }
