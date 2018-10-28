@@ -12,4 +12,8 @@ export class LecturerService {
   getLecturer(){
     return this.http.get<any>("api/lecturer");
   }
+
+  addLecturer(lecturer : any){
+    return this.http.post<any>("api/addlec",lecturer);
+  }
 }
