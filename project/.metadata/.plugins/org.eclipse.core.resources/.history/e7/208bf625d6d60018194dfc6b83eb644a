@@ -1,5 +1,0 @@
-package com.thilini.demo.service;
-
-public interface lecturerService {
-
-}

@@ -1,8 +1,0 @@
-package com.thilini.demo.service;
-
- class subjectServiceImpl implements subjectService{
-	
-
-	
-	
-}
