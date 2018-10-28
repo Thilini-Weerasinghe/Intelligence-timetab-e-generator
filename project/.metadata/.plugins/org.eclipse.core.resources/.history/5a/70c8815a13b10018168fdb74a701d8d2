@@ -1,0 +1,11 @@
+package Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.thilini.demo.model.user;
+
+public interface UserRepository extends JpaRepository<user, Integer> {
+ 
+	
+}
+ 

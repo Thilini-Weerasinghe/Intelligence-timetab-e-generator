@@ -1,0 +1,22 @@
+package com.thilini.demo;
+
+import java.util.List;
+//import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.thilini.demo.service.TopicService;
+
+@RestController
+public class TopicController { 
+	
+	@Autowired
+	private TopicService topicService;
+@RequestMapping("/topic")
+	public List<Topic> Topic() {
+		
+		return topicService.getAllTopic();
+	}
+} 

@@ -1,0 +1,5 @@
+package com.thilini.demo.repository;
+
+public interface periodRepository {
+
+}

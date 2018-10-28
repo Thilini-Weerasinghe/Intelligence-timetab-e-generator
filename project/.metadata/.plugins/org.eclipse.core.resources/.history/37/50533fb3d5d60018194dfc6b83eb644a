@@ -1,0 +1,47 @@
+package com.thilini.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.thilini.demo.model.Lecturer;
+
+import com.thilini.demo.repository.lectureRepository;
+
+public class lecturerServiceImpl implements lecturerService {
+
+	@Autowired
+	private lectureRepository lectureRepository  ;
+	
+	@Override
+	public Iterable<user> findAllUsers() {
+		// TODO Auto-generated method stub
+		return lectureRepository.findAll();
+		
+	}
+//
+//	@Override
+//	public String saveUser(user userData) {
+//		// TODO Auto-generated method stub
+//		userRepository.save(userData); 
+//		return "data saved";
+//	} 
+//	
+
+	@Override
+	public String saveUser(user userData) {
+
+		subjectRepository.save(userData);
+		return "sava user";
+	}
+
+	@Override
+	public Iterable<user> findAllsubject() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Iterable<user> findByYear(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

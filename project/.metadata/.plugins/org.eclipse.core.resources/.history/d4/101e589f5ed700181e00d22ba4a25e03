@@ -1,0 +1,9 @@
+package com.thilini.demo.repository;
+
+
+
+
+
+public interface subjectRepository  {
+
+}

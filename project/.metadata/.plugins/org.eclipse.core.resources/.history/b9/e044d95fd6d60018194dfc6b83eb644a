@@ -1,0 +1,12 @@
+package com.thilini.demo.service;
+
+import com.thilini.demo.model.Lecturer;
+import com.thilini.demo.model.user;
+
+public interface lecturerService {
+
+	Iterable<Lecturer> findAllLecturer();
+	String saveUser(user userData);
+	//Iterable<Lecturer> findAllsubject();
+	//Iterable<user> findByYear(Integer id);
+}

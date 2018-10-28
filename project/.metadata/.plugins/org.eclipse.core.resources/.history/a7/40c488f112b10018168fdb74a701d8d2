@@ -1,0 +1,31 @@
+package com.thilini.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.thilini.demo.model.user;
+
+import Repository.UserRepository;
+@Service
+public class UserServiceImpl implements UserService{
+    @Autowired
+	private UserRepository userRepository;
+
+	@Override
+	public List<user> findAllUsers() {
+		// TODO Auto-generated method stub
+		List<user> allUser = userRepository.findAll();
+		return  allUser;
+	}
+
+	@Override
+	public String saveUser(user userData) {
+		// TODO Auto-generated method stub
+		userRepository.save(userData); 
+		return "data saved";
+	} 
+	
+	
+}

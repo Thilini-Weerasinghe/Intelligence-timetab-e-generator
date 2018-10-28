@@ -1,0 +1,10 @@
+package com.thilini.demo.service;
+
+public class HelloServiceImpl implements HelloService{
+
+	public String hello() {
+		// TODO Auto-generated method stub
+		return " hello world ";
+	}
+
+}

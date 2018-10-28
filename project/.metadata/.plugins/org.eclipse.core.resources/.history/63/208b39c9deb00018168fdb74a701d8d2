@@ -1,0 +1,8 @@
+package com.thilini.demo.service;
+
+import Repository.UserRepository;
+
+public class UserServiceImpl implements UserService{
+
+	private UserRepository userRepository;
+}

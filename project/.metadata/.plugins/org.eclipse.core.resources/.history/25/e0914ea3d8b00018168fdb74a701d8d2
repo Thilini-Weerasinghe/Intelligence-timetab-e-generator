@@ -1,0 +1,9 @@
+package com.thilini.demo.model;
+
+public class user {
+	private Integer id;
+	private String firstName;
+	private String lastName;
+	private Integer age;
+	private String email;
+}

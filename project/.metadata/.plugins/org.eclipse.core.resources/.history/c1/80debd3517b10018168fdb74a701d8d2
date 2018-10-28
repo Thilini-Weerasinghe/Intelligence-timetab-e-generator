@@ -1,0 +1,13 @@
+package com.thilini.demo.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class HelloServiceImpl implements HelloService{
+
+	public String hello() {
+		// TODO Auto-generated method stub
+		return " hello world ";
+	}
+
+}

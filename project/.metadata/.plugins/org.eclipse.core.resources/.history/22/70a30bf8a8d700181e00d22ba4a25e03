@@ -1,0 +1,17 @@
+package com.thilini.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class years_tableController {
+
+	@Autowired
+	private com.thilini.demo.service.yearTableService yearTableService;
+	
+	@GetMapping("/yeartable")
+	public Iterable<Year_table> finfall(){
+		
+		return yearTableService.findAll();
+	}
+}

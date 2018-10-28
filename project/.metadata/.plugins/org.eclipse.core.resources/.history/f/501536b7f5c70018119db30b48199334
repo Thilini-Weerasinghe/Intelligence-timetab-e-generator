@@ -1,0 +1,36 @@
+package com.thilini.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.thilini.demo.model.user;
+import com.thilini.demo.service.subjectService;
+
+@RestController
+public class Ucontroller {
+	@Autowired
+	private subjectService userService;
+	@GetMapping("/subject")
+	public Iterable<user> findSubjects(){
+		
+		return userService.findAllsubject();
+	}
+	@GetMapping("/subject/{id}")
+    public Iterable<user> findByYear(@PathVariable Integer id){
+		
+		return userService.findByYear(id);
+	}
+	
+	
+	 @PostMapping("/add")
+	 public String saveSubject(@RequestBody user subject) {
+		 
+		 return userService.saveUser(subject);
+	 	
+
+}
+}

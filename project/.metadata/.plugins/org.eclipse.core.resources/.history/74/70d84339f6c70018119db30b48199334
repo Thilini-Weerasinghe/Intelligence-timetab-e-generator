@@ -1,0 +1,35 @@
+package com.thilini.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.thilini.demo.model.user;
+import com.thilini.demo.repository.subjectRepository;
+@Service
+public class subjectServiceImpl implements subjectService{
+	@Autowired
+    private subjectRepository subjectRepository;
+
+	@Override
+	public Iterable<user> findAllUsers() {
+		// TODO Auto-generated method stub
+		return subjectRepository.findAll();
+		
+	}
+//
+//	@Override
+//	public String saveUser(user userData) {
+//		// TODO Auto-generated method stub
+//		userRepository.save(userData); 
+//		return "data saved";
+//	} 
+//	
+
+	@Override
+	public String saveUser(user userData) {
+
+		subjectRepository.save(userData);
+		return "sava user";
+	}
+	
+}

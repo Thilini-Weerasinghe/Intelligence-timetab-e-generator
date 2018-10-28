@@ -1,0 +1,16 @@
+package com.thilini.demo.service;
+
+import org.springframework.stereotype.Service;
+
+import com.thilini.demo.model.Lec_hall;
+
+@Service
+public class lecHallServiceImpl implements lecHallService {
+
+	@Override
+	public Iterable<Lec_hall> findAllHall() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

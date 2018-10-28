@@ -1,0 +1,13 @@
+package com.thilini.demo.service;
+
+import java.util.List;
+
+import com.thilini.demo.model.user;
+
+public interface subjectService {
+ 
+	Iterable<user> findAllUsers();
+	String saveUser(user userData);
+	Iterable<user> findAllsubject();
+	Iterable<user> findByYear(Integer id);
+}
