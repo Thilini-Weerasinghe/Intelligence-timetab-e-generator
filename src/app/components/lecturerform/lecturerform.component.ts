@@ -33,14 +33,14 @@ export class LecturerformComponent implements OnInit {
   }
 
   saveLecturer(){
-    this.lecturer.l_name = this.lec_name;
+    this.lecturer.lecturer_name= this.lec_name;
     this.lecturer.email=this.email;
-    this.lecturer.Lec_id=this.lec_id;
-    this.lecturer.tel_no=this.tel_no;
+    this.lecturer.lectureId=this.lec_id;
+    this.lecturer.telephone_no=this.tel_no;
 
     this.lecList.push(this.lecturer);
     console.log(this.lecList);
-    this.lecturerService.addLecturer(this.lecList).subscribe(data=> {
+    this.lecturerService.addLecturer(this.lecList).subscribe((data)=> {
        console.log(data);
     
     }, err => {

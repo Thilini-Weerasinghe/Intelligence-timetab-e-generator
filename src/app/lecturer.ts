@@ -1,7 +1,7 @@
 export class Lecturer{
     id:number ;
-    Lec_id : number;
-    l_name : string ;
+    lectureId : number;
+    lecturer_name : string ;
     email:string ;
-    tel_no : number ;
+    telephone_no : number ;
 }

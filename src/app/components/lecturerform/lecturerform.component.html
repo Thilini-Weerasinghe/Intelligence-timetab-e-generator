@@ -1,27 +1,28 @@
 <div class="container">
   <h2> LECTURER FORM</h2>
-<form id="form1" action="" #frm="ngForm" (ngSubmit)="saveLecturer()">
+<form id="form1" action=""  (ngSubmit)="saveLecturer()">
   <div class="form-group">
     <label for="formGroupExampleInput">Lecturer Name </label>
-    <input type="text" class="form-control" [(ngModel)]="name" name="name" id="formGroupExampleInput" placeholder="Lecturer Name ">
+    <input type="text" class="form-control" [(ngModel)]="name" name="name" id="name" placeholder="Lecturer Name ">
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput2"> Lecturer Id</label>
-    <input type="text" class="form-control" [(ngModel)]="lecid" name="lecid" id="formGroupExampleInput2" placeholder="Lecturer Id">
+    <input type="text" class="form-control" [(ngModel)]="lecid" name="lecid" id="lecid" placeholder="Lecturer Id">
   </div>
  
   <div class="form-group">
     <label for="formGroupExampleInput2"> E mail</label>
-    <input type="text" class="form-control" [(ngModel)]="email" name="email" id="formGroupExampleInput2" placeholder="E mail">
+    <input type="text" class="form-control" [(ngModel)]="email" name="email" id="email" placeholder="E mail">
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput2"> Phone</label>
-    <input type="text" class="form-control" [(ngModel)]="phone" name="phone" id="formGroupExampleInput2" placeholder="Phone">
+    <input type="text" class="form-control" [(ngModel)]="phone" name="phone" id="phone" placeholder="Phone">
   </div>
-</form>
-<div class="submit1">
+  <div class="submit1">
 <button type="submit" class="btn btn-primary btn-lg"> <b> SUBMIT </b> </button>
 </div>
+</form>
+
 </div>
 <form action="" #frm="ngForm">
     <div class="form-group row">
