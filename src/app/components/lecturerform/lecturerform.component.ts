@@ -12,10 +12,10 @@ export class LecturerformComponent implements OnInit {
   private lecturer = new Lecturer();
   private lecList:Lecturer[]=[];
 
-  lec_id : number;
-  lec_name:string;
+  lectureId : number;
+  l_name:string;
   email:string;
-  tel_no : number;
+  phone : number;
 
   constructor(private lecturerService: LecturerService) { }
 
@@ -33,10 +33,10 @@ export class LecturerformComponent implements OnInit {
   }
 
   saveLecturer(){
-    this.lecturer.lecturer_name= this.lec_name;
+    this.lecturer.lectureId=this.lectureId;
+    this.lecturer.lecturer_name= this.l_name;
     this.lecturer.email=this.email;
-    this.lecturer.lectureId=this.lec_id;
-    this.lecturer.telephone_no=this.tel_no;
+    this.lecturer.telephone_no=this.phone;
 
     this.lecList.push(this.lecturer);
     console.log(this.lecList);
