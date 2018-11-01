@@ -1,20 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { ViewComponent } from './components/view/view.component';
-import { LecturerService} from './shared_service/lecturer.service';
 import { SubjectformComponent } from './components/subjectform/subjectform.component';
 import { LecturerformComponent } from './components/lecturerform/lecturerform.component';
 import { LecturehallformComponent } from './components/lecturehallform/lecturehallform.component';
 import { SelectionComponent } from './components/selection/selection.component';
-import {HttpClientModule} from '../../node_modules/@angular/common/http';
+
+import { LecturerService} from './shared_service/lecturer.service';
+import { LoginService} from './shared_service/login.service'; 
+import {HttpClientModule , HttpHeaders} from '../../node_modules/@angular/common/http';
 import {FormsModule} from '@angular/forms';
+
 const appRoutes: Routes=[
-{path: 'login', component : LoginComponent}
+{path: 'login', component : LoginComponent}  
 ];
 
 @NgModule({
@@ -33,6 +37,7 @@ const appRoutes: Routes=[
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    
 
 
 
@@ -69,7 +74,11 @@ const appRoutes: Routes=[
     ]),
 
   ],
-    providers: [LecturerService],
+    providers: [
+      LecturerService ,
+      LoginService
+    
+    ],
 
   bootstrap: [AppComponent]
 })
